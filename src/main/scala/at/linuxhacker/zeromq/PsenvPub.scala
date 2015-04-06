@@ -9,7 +9,7 @@ object PsenvPub {
                 val context = ZMQ.context(1)
                 val publisher = context.socket(ZMQ.PUB)
 
-                publisher.bind("tcp://127.0.0.1:5563")
+                publisher.bind("tcp://127.0.0.1:5595")
                 while (true) {
                         // Write two messages, each with an envelope and content
                         publisher.send("A".getBytes(), ZMQ.SNDMORE)

@@ -9,7 +9,7 @@ object PsenvSub {
     val context = ZMQ.context(1)
     val subscriber = context.socket(ZMQ.SUB)
 
-    subscriber.connect("tcp://localhost:5563")
+    subscriber.connect("tcp://localhost:5595")
     subscriber.subscribe("B".getBytes())
     println( "Enter loop")
     while (true) {
