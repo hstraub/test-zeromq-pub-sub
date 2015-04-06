@@ -3,15 +3,11 @@ import NativePackagerKeys._
 lazy val commonSettings = Seq(
   organization := "at.linuxhacker",
   version := "0.1",
-  scalaVersion := "2.11.4",
+  scalaVersion := "2.11.5",
   name := "TestZeroMqPubSub"
 )
 
 packageArchetype.akka_application
-
-version := "0.1"
-
-scalaVersion := "2.11.6"
 
 
 mainClass in Compile := Some( "at.linuxhacker.zeromq.SyncPub" )
