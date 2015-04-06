@@ -7,6 +7,9 @@ lazy val commonSettings = Seq(
   name := "TestZeroMqPubSub"
 )
 
+lazy val root = (project in file(".")).
+  settings(commonSettings: _*)
+  
 packageArchetype.akka_application
 
 
